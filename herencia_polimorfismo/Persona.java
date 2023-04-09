@@ -1,18 +1,18 @@
-package clases_objetos;
+package herencia_polimorfismo;
 
 public class Persona {
-    private int edad;
-    private String nombre;
-    private String apellido;
+    protected int edad;
+    protected String nombre;
+    protected String telefono;
 
-    public Persona(int edad, String nombre, String apellido){
+    public Persona(int edad, String nombre, String telefono){
         this.edad=edad;
         this.nombre=nombre;
-         this.apellido=apellido;
+         this.telefono=telefono;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
     public void setEdad(int edad) {
@@ -31,8 +31,9 @@ public class Persona {
         return edad;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getTelefono() {
+        return telefono;
     }
 
+    
 }
